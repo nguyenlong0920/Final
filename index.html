@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://online.hvnh.edu.vn/Home/Marks -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng thông tin đào tạo</title>
+
+    <link href="./bootstrap.css" rel="stylesheet">
+<link href="./site.css" rel="stylesheet">
+<link href="./menu.css" rel="stylesheet">
+<link href="./Yersin.css" rel="stylesheet">
+
+    <script src="./modernizr-2.6.2.js"></script>
+
+    <script src="./jquery-1.10.2.js"></script>
+<script src="./jquery.validate.unobtrusive.js"></script>
+
+    <script src="./respond.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script src="./function.js"></script>
+
+    <link href="./cssbyschool" rel="stylesheet">
+
+    <script type="text/javascript" src="./moment.min.js"></script>
+    <script type="text/javascript" src="./bootstrap-datetimepicker.min.js"></script>
+
+
+    <link rel="stylesheet" href="./bootstrap-datetimepicker.css">
+    <link href="./select2-bootstrap.css" rel="stylesheet">
+    <link href="./select2.css" rel="stylesheet">
+    <script src="./select2.js"></script>
+</head>
+<body style="">
+    <form method="post">
+        <div class="" style="background:#fff;min-height:100vh; margin: 0px 1px">
+            <header id="header">
+           
+                <div class="row">
+                    <div class="col-md-12">
+                        <img style="width: 100%;max-height: 400px;" src="./banner.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <div id="header">
+                            <nav class="navbar navbar-default stylecolor">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse" id="menu">
+                                    <ul class="nav navbar-nav">
+                                                <li><a href="http://online.hvnh.edu.vn/">Trang chủ</a></li>
+                                                <li><a href="http://online.hvnh.edu.vn/public/TraCuuVanBang">Tra cứu văn bằng</a></li>
+                                                <li><a href="http://online.hvnh.edu.vn/public/tracuuthoikhoabieu">Tra cứu thời khóa biểu</a></li>
+
+                                    </ul>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown stylecolor">
+                                            <a data-toggle="dropdown" href="http://online.hvnh.edu.vn/Home/Marks" class="stylecolor">
+                                                        <span>21A4010431 | Trần Hồng Nhung</span>
+
+                                                <span class="caret"></span>
+                                            </a>
+
+                                            <ul class="dropdown-menu stylecolor">
+                                                        <li><a href="http://online.hvnh.edu.vn/Home">Thông tin</a></li>
+                                                        <li><a href="javascript:ShowFormStudentPw()">Đổi mật khẩu</a></li>
+
+
+                                                <li class="divider"></li>
+                                                            <li><a href="http://online.hvnh.edu.vn/Login/Logout">Thoát</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="body" style="padding-bottom: 5px">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="accordion" id="leftMenu">
+                            <div class="accordion-group">
+                                <div class="accordion-heading menuhome" style="padding:10px">
+                                    <a class="" data-toggle="collapse" data-parent="#leftMenu" href="http://online.hvnh.edu.vn/Home/Marks#">
+                                        <span style="color:#fff !important" class="glyphicon glyphicon-th"></span>
+                                        <b style="color:#fff !important">Chức năng</b>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div style="border:1px solid #dfdfdf;border-top:0px;background:#fff">
+                                        <div class="accordion-group" id="accordion-group">
+                                            <div class="accordion-heading" style="border-bottom: 1px solid #dfdfdf">
+                                                <a class="accordion-toggle collapse_0" onclick="setCookie(&#39;menukey&#39;,&#39;collapse_0&#39;,1000)" data-toggle="collapse" data-parent="#leftMenu" href="http://online.hvnh.edu.vn/Home/Marks#collapse_0">
+                                                    <span style="color: #056382 !important; padding-top: 10px !important;" class="glyphicon glyphicon-chevron-right text-color">
+                                                    </span> <span style="color:#333 !important">Trang cá nhân</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-md-12 accordion-inner" style="border-bottom: 1px solid #dfdfdf;background:#E8E8E8">
+                                                
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/info">Thông tin cá nhân</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/Index">Thông báo</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+                                                                            <a style="color:#333;margin-left:3px" target="_blank" href="https://drive.google.com/file/d/1kwYWtaZe5TQXe4D12YDehJwJYey98qIz/view?usp=sharing">Hướng dẫn sử dụng</a>
+                                                                    </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="accordion-group" id="accordion-group">
+                                            <div class="accordion-heading" style="border-bottom: 1px solid #dfdfdf">
+                                                <a class="accordion-toggle collapse_1" onclick="setCookie(&#39;menukey&#39;,&#39;collapse_1&#39;,1000)" data-toggle="collapse" data-parent="#leftMenu" href="http://online.hvnh.edu.vn/Home/Marks#collapse_1">
+                                                    <span style="color: #056382 !important; padding-top: 10px !important;" class="glyphicon glyphicon-chevron-right text-color">
+                                                    </span> <span style="color:#333 !important">Tra cứu thông tin</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-md-12 accordion-inner" style="border-bottom: 1px solid #dfdfdf;background:#E8E8E8">
+                                                
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/StudyPrograms">Chương trình đào tạo</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/ClassStudentSchedules">Lịch học</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/Exam">Lịch thi</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/Decisions">Quyết định sinh viên</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/DiemDanhSinhVien">Chuyên cần</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/XemDiemRenLuyen">Kết quả rèn luyện</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/Marks">Kết quả học tập</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/AccountFees">Tài chính sinh viên</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/KetQuaDangKy">Xem kết quả đăng ký học phần</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/StudentCertificate">Chứng chỉ</a>                                                                    </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="accordion-group" id="accordion-group">
+                                            <div class="accordion-heading" style="border-bottom: 1px solid #dfdfdf">
+                                                <a class="accordion-toggle collapse_2" onclick="setCookie(&#39;menukey&#39;,&#39;collapse_2&#39;,1000)" data-toggle="collapse" data-parent="#leftMenu" href="http://online.hvnh.edu.vn/Home/Marks#collapse_2">
+                                                    <span style="color: #056382 !important; padding-top: 10px !important;" class="glyphicon glyphicon-chevron-right text-color">
+                                                    </span> <span style="color:#333 !important">Chức năng trực tuyến</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="col-md-12 accordion-inner" style="border-bottom: 1px solid #dfdfdf;background:#E8E8E8">
+                                                
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://regist.hvnh.edu.vn/Login">Đăng ký học phần</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/home/Registconfirm">Xin giấy xác nhận</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/home/lienhe">Liên hệ - góp ý</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/Graduation">Xét tốt nghiệp</a>                                                                    </li>
+                                                                    <li style="padding:7px 0px">
+                                                                        <div id="test" style="width: 13px;
+                                                                        height: 1px;
+                                                                        border-bottom: 1px dotted #555;
+                                                                        float: left;
+                                                                        padding-top: 10px"></div>
+<a style="color:#333;margin-left:3px" href="http://online.hvnh.edu.vn/Home/DangKyInBangDiem">Đăng ký in bảng điểm</a>                                                                    </li>
+
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        
+
+<div class="divmain">
+    <div class="bgtitle">Kết quả học tập</div>
+    <div>
+        <div width="100%" class="form-inline col-md-12 magin-bottom-5px">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label>Chương trình đào tạo</label>
+                    <select class="form-control" id="ddlStudyProgram" name="ddlStudyProgram" onchange="ShowMarks();"><option value="18ATCDN">ĐH chính quy K21 TCDN</option>
+</select>
+                </div>
+                <div class="col-md-8 form-group"></div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-2 form-group"><label>Năm học</label></div>
+                <div class="col-md-3 form-group" style="margin-left: 14px">
+                    <select class="form-control" id="ddlYearStudy" name="ddlYearStudy" onchange="ShowMarks();"><option value="2023-2024">2023-2024</option>
+<option value="2022-2023">2022-2023</option>
+<option value="2021-2022">2021-2022</option>
+<option value="2020-2021">2020-2021</option>
+<option value="2019-2020">2019-2020</option>
+<option value="2018-2019">2018-2019</option>
+<option selected="selected" value="0">2018-2019</option>
+</select>
+                </div>
+
+                <div class="col-md-3 form-group">
+                    <label>Học kỳ</label>
+                    <select class="form-control " id="ddlTermID" name="ddlTermID" onchange="ShowMarks();"><option value="HK01">Học kỳ 1</option>
+<option value="HK02">Học kỳ 2</option>
+<option value="HK03">Học kỳ 3</option>
+<option selected="selected" value="0">Học kỳ 1</option>
+</select>
+                </div>
+
+                
+            </div>
+        </div>
+        <div id="divHienthiKQHT">
+
+
+<div class="clearfix"></div>
+<div class="alert alert-info smallTxt config-alert">
+    <strong>
+        <u>Chú ý:</u>
+    </strong> <br>
+    - Những môn có dấu <b style="color:red">(*)</b> sẽ không tính điểm trung bình mà chỉ là môn điều kiện.
+
+    
+</div>
+
+<table border="1px" class="table-hover table-responsive" style="border-collapse: collapse;font-size:13px" width="100%">
+    <tbody><tr style="text-align:center">
+        <th>STT</th>
+        <th>Mã môn</th>
+        <th>Tên môn</th>
+        <th>TC</th>
+        <th>% KT</th>
+        <th>% CC</th>
+        <th>% Thi</th>
+        <th>Điểm CC</th>
+        <th>Điểm KT1</th>
+        <th>Điểm KT2</th>
+        <th>Thi L1</th>
+        <th>Thi L2</th>
+        <th>TK1 (10)</th>
+        <th>TK (10)</th>
+        <th>TK1 (CH)</th>
+        <th>TK (CH)</th>
+    </tr>
+                    <tr>
+                        <td colspan="16" style="background-color: #c7d6f3"><b style="color: blue">Năm học : 2018-2019 - Học kỳ : HK01</b></td>
+                    </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">1</td>
+                    <td style="padding:2px !important" align="center">ECO01A</td>
+                    <td style="padding:2px !important">Kinh tế vi mô</td>
+                    <td style="padding:2px !important" align="center">3</td>
+                    <td style="padding:2px !important" align="center">
+                        30
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        10
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        60
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">2</td>
+                    <td style="padding:2px !important" align="center">IS01A</td>
+                    <td style="padding:2px !important">Tin học đại cương</td>
+                    <td style="padding:2px !important" align="center">3</td>
+                    <td style="padding:2px !important" align="center">
+                        40
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        10
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        50
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">3</td>
+                    <td style="padding:2px !important" align="center">LAW01A</td>
+                    <td style="padding:2px !important">Pháp luật đại cương</td>
+                    <td style="padding:2px !important" align="center">3</td>
+                    <td style="padding:2px !important" align="center">
+                        30
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        10
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        60
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">4</td>
+                    <td style="padding:2px !important" align="center">MAT11A</td>
+                    <td style="padding:2px !important">Toán kinh tế II</td>
+                    <td style="padding:2px !important" align="center">3</td>
+                    <td style="padding:2px !important" align="center">
+                        30
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        10
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        60
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">5</td>
+                    <td style="padding:2px !important" align="center">PLT05A</td>
+                    <td style="padding:2px !important">Những nguyên lý cơ bản của Chủ nghĩa Mác - Lênin I</td>
+                    <td style="padding:2px !important" align="center">2</td>
+                    <td style="padding:2px !important" align="center">
+                        30
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        10
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        60
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">
+                            10.0
+                        </td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                <tr>
+                    <td style="padding:2px !important" align="center">6</td>
+                    <td style="padding:2px !important" align="center">SPT07A</td>
+                    <td style="padding:2px !important">Giáo dục quốc phòng <span style="color:red">*</span></td>
+                    <td style="padding:2px !important" align="center">8</td>
+                    <td style="padding:2px !important" align="center">
+                        0
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        
+                    </td>
+                    <td style="padding:2px !important" align="center">
+                        100
+                    </td>
+                    
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">
+                            
+                        </td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">10.0</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                        <td style="padding:2px !important" align="center">A</td>
+                </tr>
+                    <tr style="font-weight:bold; background-color:#f7eedf">
+                        <td colspan="8" style="vertical-align:bottom">
+ <br>
+                                        - Điểm trung bình học kỳ hệ 10/100: 10.00 <br>
+                                        - Điểm trung bình học kỳ hệ 4: 4.00 <br>
+                                        - Điểm trung bình tích lũy: 10.00 <br>
+                                        - Điểm trung bình tích lũy (hệ 4): 4.00
+                        </td>
+
+                        <td colspan="8" style="vertical-align:bottom">
+                                - Số tín chỉ đạt: 44 <br>
+                                    - Số tín chỉ tích lũy: 22 <br>
+                                    - Phân loại ĐTB HK: Giỏi <br>
+                                    - Điểm trung bình rèn luyện HK: 100 <br>
+                                    - Phân loại ĐTBRL HK: Xuất Sắc <br>
+                        </td>
+                    </tr>
+
+</tbody></table>
+<style>
+    th {
+        text-align: center !important;
+    }
+</style>
+</div>
+    </div>
+</div>
+
+<!--
+<script>
+    $(document).ready(function () {
+        ShowMarks();
+    });
+</script>
+-->
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div style="background: #056382; color: white;">
+                    <div class="row">
+                        <div class="col-md-1"> </div>
+                        <div class="col-md-5" style="height: 100px; padding-top: 5px; margin-bottom: 15px">
+                            <div style="float:left; ">
+                                <div style="padding-bottom: 20px">
+                                    <img src="./LOGO.png" style="width: 90px; padding-top: 10px">
+                                </div>
+                            </div>
+                            <div style="float:left; padding: 10px 0px 0px 15px ">
+                                <div class="cus-ttcedu-footer" style="font-weight:bold">
+                                    HỌC VIỆN NGÂN HÀNG
+                                </div>
+                                <div class="cus-ttcedu-footer">
+                                   Địa chỉ: <b>Số 12, đường Chùa Bộc, Quận Đống Đa, Hà Nội</b> 
+                                </div>
+                                <div class="cus-ttcedu-footer">
+                                    Website: <b>www.hvnh.edu.vn</b> | Email: <b>truyenthong@hvnh.edu.vn</b>
+                                </div>
+                                <div class="cus-ttcedu-footer">
+                                    Điện thoại: <b>+84 243 852 1305</b> - Fax: <b>+84 243 852 5024 </b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="col-md-3">
+                                
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                            <div class="col-md-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+        </div>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog" id="MessagesContent">
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="myAlert" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="h4Alert">Thông báo</h4>
+                </div>
+                <div class="modal-body" id="divContentAlert">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Modal -->
+    
+
+<!-- 
+    <script>
+
+
+        $(document).ready(function () {
+            Processcookie();
+        });
+
+        $(document).on("keypress", 'form', function (e) {
+            var code = e.keyCode || e.which;
+            console.log(code);
+            if (code == 13) {
+                console.log('Inside');
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script>
+
+-->
+</body></html>
